@@ -1,138 +1,81 @@
-Math_and_Random_Python
+#  Math_and_Random_Python
 
-Python Projects – Math and Random Modules
+This repository contains small Python scripts focused on practicing **fundamental Python concepts**, especially using the built-in **math** and **random** modules.
 
-This repository contains small, beginner‑friendly Python programs that demonstrate how to use the built‑in math and random modules. The focus is on basic mathematical calculations and simple random operations, making it ideal for learning, practicing, and reviewing Python fundamentals.
+The goal of this project is to help beginners understand basic operations, calculations, and simple logic through practical examples.
 
- Features
-1️- Generate a Random Number
+---
 
-Generates a random floating‑point number between 0 and 1, formatted with two decimal places.
+##  Contents
 
-import random
+The scripts in this repository cover fundamental Python concepts, such as:
 
+* Basic mathematical operations
+* Random number generation
+* Trigonometric calculations
+* Number manipulation (integer part, hypotenuse, angles)
+* Basic programming logic and input/output handling
 
-num = random.random()
-print("Number is {:.2f}".format(num))
-2️- Integer Part of a Number
+---
 
-Receives a real number from the user and displays only its integer part.
+##  Available Files
 
-import math
+* **random_number.py** → Generates a random floating-point number between 0 and 1
+* **integer_part.py** → Displays only the integer part of a real number
+* **hypotenuse.py** → Calculates the hypotenuse of a right triangle
+* **trigonometry.py** → Calculates sine, cosine, and tangent of an angle
+* **random_student.py** → Randomly selects one student from a list
+* **shuffle_students.py** → Randomly shuffles the order of students
 
+---
 
-r = float(input('Enter a real number (use a dot): '))
-i = math.trunc(r)
-print(i)
-3️- Hypotenuse Calculation
+##  Technologies Used
 
-Calculates the hypotenuse of a right triangle using the opposite and adjacent sides provided by the user.
+* **Python 3.14**
+* **math module**
 
-import math
+  * `trunc()`
+  * `hypot()`
+  * `sin()`
+  * `cos()`
+  * `tan()`
+* **random module**
 
+  * `random()`
+  * `choice()`
+  * `shuffle()`
 
-co = float(input('Enter the opposite side value: '))
-ca = float(input('Enter the adjacent side value: '))
-hi = math.hypot(co, ca)
+---
 
+##  How to Run
 
-print('The hypotenuse value is {:.2f}'.format(hi))
-4️4- Trigonometric Functions
+Make sure you have **Python 3** installed.
 
-Calculates the sine, cosine, and tangent of an angle entered by the user (in degrees).
+1. Clone the repository:
 
-import math
-
-
-angle = float(input('Enter the angle value: '))
-
-
-sine = math.sin(math.radians(angle))
-cosine = math.cos(math.radians(angle))
-tangent = math.tan(math.radians(angle))
-
-
-print(
-    'The angle {}° has sine {:.2f}, cosine {:.2f}, and tangent {:.2f}'
-    .format(angle, sine, cosine, tangent)
-)
-5️ - Random Student Selection
-
-Randomly selects one student from five names provided by the user.
-
-import random
-
-
-a1 = input('Enter the first student name: ')
-a2 = input('Enter the second student name: ')
-a3 = input('Enter the third student name: ')
-a4 = input('Enter the fourth student name: ')
-a5 = input('Enter the fifth student name: ')
-
-
-choice = random.choice([a1, a2, a3, a4, a5])
-print('The selected student is {}'.format(choice))
-6️ - Shuffle Students Order
-
-Randomly shuffles the order of the five students entered by the user.
-
-import random
-
-
-a1 = input('Enter the first student name: ')
-a2 = input('Enter the second student name: ')
-a3 = input('Enter the third student name: ')
-a4 = input('Enter the fourth student name: ')
-a5 = input('Enter the fifth student name: ')
-
-
-students = [a1, a2, a3, a4, a5]
-random.shuffle(students)
-
-
-print('The order will be {}'.format(students))
-Technologies Used
-
-Python 3.14
-
-math module
-
-trunc()
-
-hypot()
-
-sin()
-
-cos()
-
-tan()
-
-random module
-
-random()
-
-choice()
-
-shuffle()
-
-How to Use
-
-Clone the repository:
-
+```bash
 git clone https://github.com/Tsukiii3/Math_and_Random_Python
+```
 
-Navigate to the project folder:
+2. Navigate to the project folder:
 
+```bash
 cd Math_and_Random_Python
+```
 
-Run the desired script:
+3. Run any script using:
 
+```bash
 python file_name.py
+```
 
 Follow the instructions displayed in the terminal.
 
-Purpose
+---
 
-This project was created for learning and practice purposes, helping beginners understand how Python's math and random modules work through simple and practical examples.
+##  Purpose
 
-Feel free to explore, modify, and improve the code 🚀
+This project was created for **study and practice**, serving as a simple reference for beginners learning Python and exploring the `math` and `random` modules.
+
+Feel free to explore, modify, and improve the scripts 
+
